@@ -1,0 +1,171 @@
+
+./app/Main.hs,52
+module Main Main0,1
+main main4,5
+main main5,6
+
+./src/Lib.hs,65
+module LibLib0,1
+someFunc someFunc4,5
+someFunc someFunc5,6
+
+./src/Instruction.hs,3115
+data AddrMode AddrMode5,6
+data AddrMode = ImpliedImplied5,6
+              | AccumulatorAccumulator6,7
+              | ImmediateImmediate7,8
+              | RelativeRelative8,9
+              | ZeroPageZeroPage9,10
+              | ZeroPageXZeroPageX10,11
+              | ZeroPageYZeroPageY11,12
+              | AbsoluteAbsolute12,13
+              | AbsoluteXAbsoluteX13,14
+              | AbsoluteYAbsoluteY14,15
+              | IndirectIndirect15,16
+              | IndexedIndirectIndexedIndirect16,17
+              | IndirectIndexedIndirectIndexed17,18
+data Op Op19,20
+data Op = Adc Adc19,20
+data Op = Adc | And And19,20
+data Op = Adc | And | Asl Asl19,20
+data Op = Adc | And | Asl | Bcc Bcc19,20
+data Op = Adc | And | Asl | Bcc | Bcs Bcs19,20
+data Op = Adc | And | Asl | Bcc | Bcs | Beq Beq19,20
+data Op = Adc | And | Asl | Bcc | Bcs | Beq | BitBit19,20
+        | Bmi Bmi20,21
+        | Bmi | Bne Bne20,21
+        | Bmi | Bne | Bpl Bpl20,21
+        | Bmi | Bne | Bpl | Brk Brk20,21
+        | Bmi | Bne | Bpl | Brk | Bvc Bvc20,21
+        | Bmi | Bne | Bpl | Brk | Bvc | Bvs Bvs20,21
+        | Bmi | Bne | Bpl | Brk | Bvc | Bvs | ClcClc20,21
+        | Cld Cld21,22
+        | Cld | Cli Cli21,22
+        | Cld | Cli | Clv Clv21,22
+        | Cld | Cli | Clv | Cmp Cmp21,22
+        | Cld | Cli | Clv | Cmp | Cpx Cpx21,22
+        | Cld | Cli | Clv | Cmp | Cpx | Cpy Cpy21,22
+        | Cld | Cli | Clv | Cmp | Cpx | Cpy | DecDec21,22
+        | Dex Dex22,23
+        | Dex | Dey Dey22,23
+        | Dex | Dey | Eor Eor22,23
+        | Dex | Dey | Eor | Inc Inc22,23
+        | Dex | Dey | Eor | Inc | Inx Inx22,23
+        | Dex | Dey | Eor | Inc | Inx | Iny Iny22,23
+        | Dex | Dey | Eor | Inc | Inx | Iny | JmpJmp22,23
+        | Jsr Jsr23,24
+        | Jsr | Lda Lda23,24
+        | Jsr | Lda | Ldx Ldx23,24
+        | Jsr | Lda | Ldx | Ldy Ldy23,24
+        | Jsr | Lda | Ldx | Ldy | Lsr Lsr23,24
+        | Jsr | Lda | Ldx | Ldy | Lsr | Nop Nop23,24
+        | Jsr | Lda | Ldx | Ldy | Lsr | Nop | OraOra23,24
+        | Pha Pha24,25
+        | Pha | Php Php24,25
+        | Pha | Php | Pla Pla24,25
+        | Pha | Php | Pla | Plp Plp24,25
+        | Pha | Php | Pla | Plp | Rol Rol24,25
+        | Pha | Php | Pla | Plp | Rol | Ror Ror24,25
+        | Pha | Php | Pla | Plp | Rol | Ror | RtiRti24,25
+        | Rts Rts25,26
+        | Rts | Sbc Sbc25,26
+        | Rts | Sbc | Sec Sec25,26
+        | Rts | Sbc | Sec | Sed Sed25,26
+        | Rts | Sbc | Sec | Sed | Sei Sei25,26
+        | Rts | Sbc | Sec | Sed | Sei | Sta Sta25,26
+        | Rts | Sbc | Sec | Sed | Sei | Sta | StxStx25,26
+        | Sty Sty26,27
+        | Sty | Tax Tax26,27
+        | Sty | Tax | Tay Tay26,27
+        | Sty | Tax | Tay | Tsx Tsx26,27
+        | Sty | Tax | Tay | Tsx | Txa Txa26,27
+        | Sty | Tax | Tay | Tsx | Txa | Txs Txs26,27
+        | Sty | Tax | Tay | Tsx | Txa | Txs | TyaTya26,27
+data Instruction Instruction28,29
+data Instruction = Instr Instr28,29
+decode decode30,31
+decode decode31,32
+
+./src/flycheck_Instruction.hs,3115
+data AddrMode AddrMode5,6
+data AddrMode = ImpliedImplied5,6
+              | AccumulatorAccumulator6,7
+              | ImmediateImmediate7,8
+              | RelativeRelative8,9
+              | ZeroPageZeroPage9,10
+              | ZeroPageXZeroPageX10,11
+              | ZeroPageYZeroPageY11,12
+              | AbsoluteAbsolute12,13
+              | AbsoluteXAbsoluteX13,14
+              | AbsoluteYAbsoluteY14,15
+              | IndirectIndirect15,16
+              | IndexedIndirectIndexedIndirect16,17
+              | IndirectIndexedIndirectIndexed17,18
+data Op Op19,20
+data Op = Adc Adc19,20
+data Op = Adc | And And19,20
+data Op = Adc | And | Asl Asl19,20
+data Op = Adc | And | Asl | Bcc Bcc19,20
+data Op = Adc | And | Asl | Bcc | Bcs Bcs19,20
+data Op = Adc | And | Asl | Bcc | Bcs | Beq Beq19,20
+data Op = Adc | And | Asl | Bcc | Bcs | Beq | BitBit19,20
+        | Bmi Bmi20,21
+        | Bmi | Bne Bne20,21
+        | Bmi | Bne | Bpl Bpl20,21
+        | Bmi | Bne | Bpl | Brk Brk20,21
+        | Bmi | Bne | Bpl | Brk | Bvc Bvc20,21
+        | Bmi | Bne | Bpl | Brk | Bvc | Bvs Bvs20,21
+        | Bmi | Bne | Bpl | Brk | Bvc | Bvs | ClcClc20,21
+        | Cld Cld21,22
+        | Cld | Cli Cli21,22
+        | Cld | Cli | Clv Clv21,22
+        | Cld | Cli | Clv | Cmp Cmp21,22
+        | Cld | Cli | Clv | Cmp | Cpx Cpx21,22
+        | Cld | Cli | Clv | Cmp | Cpx | Cpy Cpy21,22
+        | Cld | Cli | Clv | Cmp | Cpx | Cpy | DecDec21,22
+        | Dex Dex22,23
+        | Dex | Dey Dey22,23
+        | Dex | Dey | Eor Eor22,23
+        | Dex | Dey | Eor | Inc Inc22,23
+        | Dex | Dey | Eor | Inc | Inx Inx22,23
+        | Dex | Dey | Eor | Inc | Inx | Iny Iny22,23
+        | Dex | Dey | Eor | Inc | Inx | Iny | JmpJmp22,23
+        | Jsr Jsr23,24
+        | Jsr | Lda Lda23,24
+        | Jsr | Lda | Ldx Ldx23,24
+        | Jsr | Lda | Ldx | Ldy Ldy23,24
+        | Jsr | Lda | Ldx | Ldy | Lsr Lsr23,24
+        | Jsr | Lda | Ldx | Ldy | Lsr | Nop Nop23,24
+        | Jsr | Lda | Ldx | Ldy | Lsr | Nop | OraOra23,24
+        | Pha Pha24,25
+        | Pha | Php Php24,25
+        | Pha | Php | Pla Pla24,25
+        | Pha | Php | Pla | Plp Plp24,25
+        | Pha | Php | Pla | Plp | Rol Rol24,25
+        | Pha | Php | Pla | Plp | Rol | Ror Ror24,25
+        | Pha | Php | Pla | Plp | Rol | Ror | RtiRti24,25
+        | Rts Rts25,26
+        | Rts | Sbc Sbc25,26
+        | Rts | Sbc | Sec Sec25,26
+        | Rts | Sbc | Sec | Sed Sed25,26
+        | Rts | Sbc | Sec | Sed | Sei Sei25,26
+        | Rts | Sbc | Sec | Sed | Sei | Sta Sta25,26
+        | Rts | Sbc | Sec | Sed | Sei | Sta | StxStx25,26
+        | Sty Sty26,27
+        | Sty | Tax Tax26,27
+        | Sty | Tax | Tay Tay26,27
+        | Sty | Tax | Tay | Tsx Tsx26,27
+        | Sty | Tax | Tay | Tsx | Txa Txa26,27
+        | Sty | Tax | Tay | Tsx | Txa | Txs Txs26,27
+        | Sty | Tax | Tay | Tsx | Txa | Txs | TyaTya26,27
+data Instruction Instruction28,29
+data Instruction = Instr Instr28,29
+decode decode30,31
+decode decode31,32
+
+./test/Spec.hs,30
+main main0,1
+main main1,2
+
+./Setup.hs,15
+main main1,2
