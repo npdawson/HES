@@ -1,6 +1,5 @@
 module Instruction where
 
-import Data.Bits
 import Data.Word
 
 data AddrMode = Implied
